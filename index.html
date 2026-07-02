@@ -7,7 +7,79 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   
+
+    <div  id="navbar-placeholder"></div>
+    <div  id="home-placeholder"></div>
+    <div  id="products-placeholder"></div>
+    <div  id="about us-placeholder"></div>
+    <div  id="contact-placeholder"></div>
+    <div  id="login-placeholder"></div>
+
+    <script>
+        // // Navbar එක Fetch කිරීම
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+
+        // Home Section එක Fetch කිරීම
+        fetch('home.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('home-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading home section:', error));
+
+        // // About Section එක Fetch කිරීම
+        fetch('about.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('about-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading about section:', error));
+
+        // Service Section එක Fetch කිරීම
+        fetch('service.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('service-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading service section:', error));
+
+        // Review Section එක Fetch කිරීම
+        fetch('review.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('review-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading review section:', error));
+
+        // Contact Section එක Fetch කිරීම
+        fetch('contact.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('contact-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading review section:', error));
+
+
+        // Footer එක Fetch කිරීම
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+
+    <script src="script.js"></script>
+    
+
+    
+
+
 
 </body>
 </html>
