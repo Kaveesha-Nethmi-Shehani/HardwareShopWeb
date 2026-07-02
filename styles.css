@@ -1,0 +1,44 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    height: 80px;
+    padding:10px 20px;
+    background-color:#f8f8f8;   
+    
+}
+
+.home-logo{
+    width: 150px;
+    height: 150px;
+    object-fit:contain;
+}
+
+.home-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.home-navbar a {
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    font-size: 16px;
+    margin-left: 60px;
+    padding: 10px 35px;
+    transition: color 0.3s ease;
+}
+
+.home-navbar a:hover{
+    color: #8b3902;
+    font-weight: bold;
+}
+
+
+
+ 
